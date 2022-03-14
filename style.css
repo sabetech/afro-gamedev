@@ -1,0 +1,70 @@
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --fontFamilyCocogoose: "COCOGOOSE", sans-serif;
+  --fontFamilyLato: "Lato", sans-serif;
+  --colorDeepBrown: #272a31;
+  --colorOrange: #ec5242;
+  --colorGrey: #d3d3d3;
+}
+
+.date-time {
+  font-family: var(--fontFamilyCocogoose);
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--colorDeepBrown);
+  margin: 0 0 0 0;
+}
+
+.fa-bars {
+  font-size: 2em;
+  color: var(--colorDeepBrown);
+}
+
+/* Mobile page */
+.hello-text {
+  color: var(--colorOrange);
+  font-size: 30px;
+  margin: 40px 0 0 0;
+}
+
+.home-grey-background {
+  background-image: url("./images/home-background.jpg");
+}
+
+.home-page-content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-title {
+  background-image: url("./images/text-background.jpg");
+  background-repeat: repeat;
+  color: var(--colorOrange);
+  font-family: var(--fontFamilyCocogoose);
+  line-height: 90%;
+  font-size: 40px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.subtitle {
+  background-color: #f0eeee;
+  font-family: var(--fontFamilyLato);
+  font-size: 18px;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.venue {
+  color: var(--colorDeepBrown);
+  font-family: var(--fontFamilyLato);
+  font-size: 20px;
+  margin: 0 0 0 0;
+}
+
+.white-overlay {
+  background: rgba(255, 255, 255, 0.9);
+}
