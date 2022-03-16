@@ -15,53 +15,82 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Afro-Game Developer Conference</title>
+    <title>Afro-Game Developer Conference - About</title>
   </head>
   <body>
-    <section >
-        <i class="fa fa-bars" aria-hidden="true"></i>
-        <h3>"Hello! <em>#AfroGameDevs</em>"</h3>
-        <h1>AFRO GAME<br />DEVELOPER CONFERNECE<br />2022</h1>
-        <p>
-           The Afro Game Developer Conference brings together the up and coming indie game developers in Africa. 
-           This ushers a moment where game developers can network with each other and learn from one another.
-           Major Game companies like Epic Games, Activision, Ubisoft etc will be present at this event and give talks
-           about their latest games in the works and the kind of technologies being used.
-        </p>
-        <p>
-            Contact us via Email for any further questions about the Afro Game Conference 
-            <strong>reachus@afrogamedev.com</strong>
-        </p>
-    </section>
-    <section>
-        <h3>Afro Game Developers Conference Logo</h2>
-        <hr>
-        <p>The logo of the Afro Game Developers Conference 2022 was chosen from a pool of options by indie game designers</p>
-        <img src="./images/afro-games-logo.png" alt="afro games logo">
-    </section>
-    <section>
-        <h3>See the past Afro Game Developer Conference 2022</h3>
-        <hr>
-        <p>Take a look at the last two Afro Game Dev Conference which took place in Nigeria and Kenya</p>
-        <div>
-
+    <div id="modal-sidebar" class="hidden">
+        <div class="modal-content">
+        <i class="fa fa-times-circle" aria-hidden="true"></i>
+            <ul class="mobile-menu-list">
+                <a href="index.html"><li class="mobile-menu-list-item"><i class="fa fa-home" aria-hidden="true"></i>Home</li></a>
+                <a href="#"><li class="mobile-menu-list-item"><i class="fa fa-list-ul" aria-hidden="true"></i>Program</li></a>
+                <a href="#"><li class="mobile-menu-list-item"><i class="fa fa-comments" aria-hidden="true"></i>Speakers</li></a>
+                <a href="about.html"><li class="mobile-menu-list-item"><i class="fa fa-info-circle" aria-hidden="true"></i>About</li></a>
+            </ul>
         </div>
-        <div>
-
+    </div>
+    <section class="about-us-background">
+        <div class="white-overlay">
+            <button class="mobile-sidebar-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <div class="about-section">
+                <h3 class="hello-text">"Hello! <em>#AfroGameDevs</em>"</h3>
+                <h1 class="main-title-about">AFRO GAME<br />DEVELOPER CONFERNECE<br />2022</h1>
+                <div class="about-info">
+                    <p >
+                        The Afro Game Developer Conference brings together the up and coming indie game developers in Africa. 
+                        This ushers a moment where game developers can network with each other and learn from one another.
+                    </p>
+                </div>
+                <p class="contact-us-info">
+                    Contact us via Email for any further questions about the Afro Game Conference 
+                    <strong>reachus@afrogamedev.com</strong>
+                </p>
+            </div>
         </div>
     </section>
-    <section class="">
-        <h3>Partner</h3>
-        <hr class="hr-medium">
-        <ul class="program-list">
-            <li>
-
-            </li>
+    <section class="section-logo">
+        <h2 class="heading-logo">Afro Game Developers Conference Logo</h2>
+        <hr class="hr-short">
+        <p class="logo-desc">The logo of the Afro Game Developers Conference 2022 was chosen from a pool of options by indie game designers</p>
+        <img src="./images/afro-games-logo.jpg" alt="afro games logo">
+    </section>
+    <hr>
+    <section class="section-logo">
+        <h2 class="heading-logo">See the past Afro Game Developer Conference 2022</h3>
+        <hr class="hr-short">
+        <p class="logo-desc">Take a look at the last two Afro Game Dev Conference which took place in Nigeria and Kenya</p>
+        <div class="past-event-card1">
+            <div class="past-event-card-overlay">
+                <h3 class="past-event">2020</h3>
+                <p>Afro Dev Conference in Ghana</p>
+            </div>
+        </div>
+        <div class="past-event-card2">
+            <div class="past-event-card-overlay">
+                <h3 class="past-event">2021</h3>
+                <p>Afro Dev Conference in Nigeria</p>
+            </div>
+        </div>
+    </section>
+    <section class="partner">
+        <h3>Partners</h3>
+        <hr class="hr-long">
+        <ul class="partner-logos">
+            <li><img class="partner-logo" src="./images/ea_png-grey.png" ></li>
+            <li><img class="partner-logo" src="./images/letio.png"></li>
+            <li><img class="partner-logo" src="./images/unity3d.png" ></li>
+            <li><img class="partner-logo" src="./images/Microsoft-Logo-2011.jpg"></li>
         </ul>
     </section>
-    <footer>
+    <footer class="footer-content">
+        <img class="logo-small" src="./images/afro-games-logo11.png" />
+        <p>
+            2022 Afro Games Conference.<br>
+            Some Rights Reversed.
+        </p>
+
 
     </footer>
-    
+    <script src="index.js"></script>
   </body>
 </html>

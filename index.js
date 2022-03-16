@@ -18,7 +18,7 @@
     const featuredSpeakers = [
         {
             name:"Kobla Setrikor Nyomi",
-            image: "./images/speakers/kobla_setri.jpg",
+            image: "./images/speakers/sample_image1.jpg",
             position: "Game Developer, Oware3D",
             detail: `Kobla Nyomi is three things: 
                     a gamer, a software developer, 
@@ -35,7 +35,7 @@
         },
         {
             name:"Gregory Banor",
-            image: "./images/speakers/random-lady1.jpg",
+            image: "./images/speakers/kobla_setri.jpg",
             position: "Game Developer Lead, Ananse Studios",
             detail: `Gregory's experience at Ananase Studios, Kenya 
                     gives him an unparallel outlook at the game development
@@ -99,5 +99,9 @@
             </li>
         </ul>`
     });
+
+    featuredSpeakersSection.innerHTML += 
+    `<button class="more-class">MORE <i class="fa fa-chevron-down" aria-hidden="true"></i></button>`
+
    // featuredSpeakersSection.innerHTML
 })()
