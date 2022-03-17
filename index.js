@@ -71,6 +71,7 @@
     ];
 
     const featuredSpeakersSection = document.querySelector("#feature-speakers");
+    if (!featuredSpeakersSection) return;
     let featureSpeakerHTML = "";
     const sectionHeading = `<h2 class="feature-speaker-heading">Featured Speakers</h2>
                             <hr class="hr-long">
