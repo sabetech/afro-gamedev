@@ -569,6 +569,11 @@ ul.feature-speaker-list > li > ul > li > p {
     display: none;
   }
 
+  .link {
+    text-decoration: none;
+    color: var(--colorDeepBrown);
+  }
+
   .logo-desc {
     font-family: var(--fontFamilyLato);
     width: 40%;
