@@ -43,7 +43,7 @@
         },
         {
             name:"Jade Raymond",
-            image: "./images/speakers/ubisoftlady.jpg",
+            image: "./images/speakers/speaker_black.jpg",
             position: "Game Producer, Ubisoft",
             detail: `Jade Raymond (born 28 August 1975) 
                     is a Canadian video game creator, best 
@@ -71,37 +71,61 @@
     ];
 
     const featuredSpeakersSection = document.querySelector("#feature-speakers");
+    let featureSpeakerHTML = "";
+    const sectionHeading = `<h2 class="feature-speaker-heading">Featured Speakers</h2>
+                            <hr class="hr-long">
+                            <ul class="feature-speaker-list-parent">`;
     
-    const sectionHeading = `<h2 class="feature-speaker-heading">Featured Speakers</h2>`;
-    featuredSpeakersSection.innerHTML = sectionHeading;
-
-    featuredSpeakers.forEach((speaker) => {
-        featuredSpeakersSection.innerHTML += 
-        `<ul class="feature-speaker-list">
-            <li>
-                <img src="${speaker.image}" alt="Derry Speaker">
-            </li>
-            <li>
-                <ul>
-                    <li>
-                        <h4>${speaker.name}</h4>
-                    </li>
-                    <li>
-                        <em>${speaker.position}</em>
-                    </li>
-                    <!-- <hr class="hr-long"> -->
-                    <li>
-                        <p>
-                            ${speaker.detail}
-                        </p>
-                    </li>
-                </ul>
-            </li>
-        </ul>`
+    featureSpeakerHTML += sectionHeading;
+    let hideFeaturedSpeakers = "";
+    featuredSpeakers.forEach((speaker, index) => {
+        if (index >= 2){
+            hideFeaturedSpeakers = 'class="hidden-feature-list hide-flag"';
+        }
+        featureSpeakerHTML += 
+        `<li ${hideFeaturedSpeakers}>
+            <ul class="feature-speaker-list">
+                <li>
+                    <img src="${speaker.image}" alt="Derry Speaker">
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <h4>${speaker.name}</h4>
+                        </li>
+                        <li>
+                            <em>${speaker.position}</em>
+                        </li>
+                        <!-- <hr class="hr-long"> -->
+                        <li>
+                            <p>
+                                ${speaker.detail}
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>`
     });
 
-    featuredSpeakersSection.innerHTML += 
+    featureSpeakerHTML += `</ul>`;
+    featureSpeakerHTML += 
     `<button class="more-class">MORE <i class="fa fa-chevron-down" aria-hidden="true"></i></button>`
 
-   // featuredSpeakersSection.innerHTML
+   featuredSpeakersSection.innerHTML = featureSpeakerHTML;
+
+
+   const moreBtn = document.querySelector(".more-class");
+   const defaultBtnContent = moreBtn.innerHTML;
+   
+   moreBtn.addEventListener('click', () => {
+    const listItems = document.querySelectorAll(".hide-flag");
+    
+    for(let i = 0;i < listItems.length;i+=1){
+        listItems[i].classList.toggle("hidden-feature-list");
+    }
+    
+    moreBtn.innerHTML = moreBtn.textContent.includes("MORE") ? `HIDE <i class="fa fa-chevron-up" aria-hidden="true"></i>` : defaultBtnContent;
+   });
+
 })()
